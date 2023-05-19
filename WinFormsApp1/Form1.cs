@@ -11,17 +11,19 @@ namespace WinFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            label1.AutoSize = false; // Disabilita il ridimensionamento automatico del testo
             label1.Text = HelloWorld();
+            label1.TextAlign = ContentAlignment.MiddleCenter; // Allinea il testo al centro
+            label1.Dock = DockStyle.Fill; // Ridimensiona il controllo per adattarsi al testo completo
 
-            // Prova cambio colore form
             this.BackColor = Color.Gray; // Cambia il colore del form corrente
         }
 
-
         public string HelloWorld()
         {
-            return "BELLA ZIOOOOOO!!!!"; //SPACCATO
+            return "Bella ZIOOOOOO!!!!"; // Restituisce l'intera frase
         }
+
         private void label1_Click(object sender, EventArgs e)
         {
 
