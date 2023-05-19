@@ -12,16 +12,15 @@ namespace WinFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
             label1.Text = HelloWorld();
-            
-            //Prova cambio colore form
-            Form1 form = new Form1();
-            form.BackColor = Color.Gray; //PS. NON FUNZIONA
-            
+
+            // Prova cambio colore form
+            this.BackColor = Color.Gray; // Cambia il colore del form corrente
         }
+
 
         public string HelloWorld()
         {
-            return "BELLA ZIOOOOOO!!!!";
+            return "BELLA ZIOOOOOO!!!!"; //SPACCATO
         }
         private void label1_Click(object sender, EventArgs e)
         {
